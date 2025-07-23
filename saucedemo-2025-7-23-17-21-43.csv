@@ -1,0 +1,64 @@
+,OS: Windows 11 | Browser: Chrome 138 | Resolution: 1164x626 | Time: 23 Jul 2025 / 17:21:43  GMT+5:30,,,,
+,,,,,
+#,Step,Data,Exp Result,XPath,cssSelector
+1,Open website,https://www.saucedemo.com/,,,
+2,"Enter ""standard_user"" into ""Username""",standard_user,,//input[@id='user-name'],#user-name
+5,"Click on ""Password for all users:secret_sauce""",,,//div[@class='login_password'],.login_password
+6,"Enter ""******"" into ""Password""",******,,//input[@id='password'],#password
+7,"Click on ""login-button""",,,//input[@id='login-button'],input[id='login-button']
+8,Scroll down,,,,
+9,Scroll up,,,,
+10,Scroll down,,,,
+11,"Click on ""Test.allTheThings() T-Shirt (Red)""",,,//div[normalize-space()='Test.allTheThings() T-Shirt (Red)'],div
+12,Scroll up,,,"//div[contains(text(),'Test.allTheThings() T-Shirt (Red)')]",
+13,Scroll down,,,,
+15,Click on cart,,,//a[@class='shopping_cart_link'],.shopping_cart_link
+16,"Click on ""Remove""",,,"//button[contains(text(),'Remove')]",button[id='remove-sauce-labs-bolt-t-shirt']
+17,"Click on ""1Sauce Labs Backpackcarry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromis""",,,//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='cart_contents_container']/div/div[@class='cart_list']/div[1],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4)
+18,"Click on ""$29.99Remove""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3)
+19,"Click on ""Remove""",,,//button[normalize-space()='Remove'],button[id='remove-sauce-labs-backpack']
+20,"Click on ""Continue Shopping""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='continue-shopping']
+21,Scroll down,,,"//button[contains(text(),'Continue Shopping')]",
+22,Scroll up,,,,
+23,"select ""Name (A to Z)"" from ""Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)""",Name (A to Z),,//select[@class='product_sort_container'],.product_sort_container
+24,"select ""Name (Z to A)"" from ""Name (A to Z)Name (Z to A)Price (low to high)Price (high to low)""",Name (Z to A),,//select[@class='product_sort_container'],.product_sort_container
+25,"Click on ""2"" cart",,,//a[@class='shopping_cart_link'],.shopping_cart_link
+26,Scroll down,,,"//a[contains(text(),'2')]",a
+27,"Click on ""Checkout""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='checkout']
+28,"Enter ""test"" into ""First Name""",test,,//input[@id='first-name'],#first-name
+29,"Enter ""user"" into ""Last Name""",user,,//input[@id='last-name'],#last-name
+30,"Enter ""201307"" into ""Zip/Postal Code""",201307,,//input[@id='postal-code'],#postal-code
+31,"Click on ""continue""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],input[id='continue']
+32,"Click on ""Total: $25.90""",,,//div[@class='summary_total_label'],.summary_total_label
+33,"Click on ""Total: $25.90""",,,//div[@class='summary_total_label'],.summary_total_label
+34,"Double click on ""Total: $25.90""",,,//div[@class='summary_total_label'],.summary_total_label
+35,Scroll up,,,"//div[contains(text(),'Total: $25.90')]",div
+36,Scroll down,,,,
+37,"Click on ""Payment Information:SauceCard #31337Shipping Information:Free Pony Express Delivery!Price TotalItem """,,,//div[@class='summary_info'],.summary_info
+38,"Click on ""Price Total""",,,//div[normalize-space()='Price Total'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(5)
+39,Scroll up,,,"//div[contains(text(),'Price Total')]",div
+40,Scroll down,,,,
+41,Scroll up,,,,
+42,"Click on ""$15.99""",,,//div[@class='inventory_item_price'][normalize-space()='$15.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+43,"Double click on ""$15.99""",,,//div[@class='inventory_item_price'][normalize-space()='$15.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+44,"Click on ""$15.99""",,,//div[@class='inventory_item_price'][normalize-space()='$15.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+45,"Click on ""$7.99""",,,//div[@class='inventory_item_price'][normalize-space()='$7.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+46,"Double click on ""$7.99""",,,//div[@class='inventory_item_price'][normalize-space()='$7.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+47,"Click on ""$7.99""",,,//div[@class='inventory_item_price'][normalize-space()='$7.99'],body > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+48,Scroll down,,,"//div[contains(text(),'$7.99')]",div
+49,"Click on ""Cancel""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='cancel']
+50,Scroll up,,,"//button[contains(text(),'Cancel')]",
+51,"Click on ""2""",,,//a[@class='shopping_cart_link'],.shopping_cart_link
+52,"Click on ""Checkout""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='checkout']
+53,"Enter ""test"" into ""First Name""",test,,//input[@id='first-name'],#first-name
+54,"Enter ""te="" into ""Last Name""",te=,,//input[@id='last-name'],#last-name
+55,"Double click on ""Last Name""",,,//input[@id='last-name'],#last-name
+56,"Enter ""user"" into ""Last Name""",user,,//input[@id='last-name'],#last-name
+57,"Enter ""201307"" into ""Zip/Postal Code""",201307,,//input[@id='postal-code'],#postal-code
+58,"Click on ""continue""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],input[id='continue']
+59,Scroll down,,,//input[@id='continue'],
+60,"Click on ""Finish""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='finish']
+61,Scroll up,,,"//button[contains(text(),'Finish')]",
+62,"Click on ""Checkout: Complete!""",,,//span[@class='title'],.title
+63,"Double click on ""Checkout: Complete!""",,,//span[@class='title'],.title
+64,"Click on ""Back Home""",,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[2]/div[2],button[id='back-to-products']
